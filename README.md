@@ -12,13 +12,9 @@ Ways to use this template:
 
 [Open in Bolt](https://bolt.new/~/github.com/weiliddat/apppl-template)
 
-Use the `apppl` CLI to create a new app using this template.
+[Use this GitHub Template](https://github.com/new?template_name=apppl-template&template_owner=weiliddat)
 
-```bash
-npx apppl generate my-app
-```
-
-[Fork the repo](https://github.com/weiliddat/apppl-template/fork) and use it as a starting point for your own app.
+Use the `apppl` CLI to create a new app using this template: `npx apppl generate my-app`
 
 ## Project Structure
 
