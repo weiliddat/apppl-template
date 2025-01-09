@@ -8,7 +8,7 @@ Ways to use this template:
 
 [Open in Bolt](https://bolt.new/~/github.com/weiliddat/apppl-template)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/weiliddat/apppl-template?devcontainer_path=.devcontainer/devcontainer.json) <!-- TODO add devcontainer.json -->
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/weiliddat/apppl-template) <!-- TODO add devcontainer.json ?devcontainer_path=.devcontainer/devcontainer.json -->
 
 Use the `apppl` CLI to create a new app using this template.
 
