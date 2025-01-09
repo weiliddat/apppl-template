@@ -1,7 +1,6 @@
 # parcelLab App Platform App Template
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/weiliddat/apppl-template)
-
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/weiliddat/apppl-template?file=src/main.ts)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/weiliddat/apppl-template)
 
 Use the `apppl` CLI to create a new app using this template.
