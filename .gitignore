@@ -136,4 +136,5 @@ dist
 .pnp.*
 
 # App Platform
-.apppl/
+.apppl/*
+!.apppl/.gitkeep
