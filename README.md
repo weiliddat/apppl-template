@@ -32,6 +32,10 @@ npx apppl generate my-app
 
 `package.json` is your typical node/npm package.json for the app.
 
+`config_schema.json` is the schema for the app configuration in JSON Schema format.
+This is used to show the app installation UI in the ParcelLab App Platform, and
+to validate the configuration when the app is installed.
+
 `src/` contains your app logic. Put your source code in this directory.
 
 `src/main.ts` is the main entry point for your app.
