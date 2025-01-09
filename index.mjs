@@ -7,7 +7,7 @@
  */
 
 /**
- * @import {RenderContext,EventContext,PayloadContext} from './types.d.ts'
+ * @import {RenderContext,EventContext,PayloadContext} from './types/app.d.ts'
  * @import {Context as LambdaContext} from 'aws-lambda'
  *
  * @param {object} event

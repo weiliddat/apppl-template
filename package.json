@@ -7,14 +7,16 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "esbuild index.mjs --bundle --minify --target=es2020 --outfile=lambda.mjs"
+    "prebuild": "npm run generate-config-types",
+    "build": "esbuild index.mjs --bundle --minify --target=es2020 --outfile=lambda.mjs",
+    "generate-config-types": "json2ts config_schema.json types/config_schema.d.ts"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.147",
     "@types/node": "^18.19.70",
     "apppl": "^0.0.2",
     "esbuild": "^0.24.2",
-    "json-schema-to-ts": "^3.1.1",
+    "json-schema-to-typescript": "^15.0.3",
     "typescript": "^5.7.3"
   }
 }

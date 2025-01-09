@@ -1,28 +1,10 @@
-import { FromSchema } from "json-schema-to-ts";
 import type {
   EventContext,
   InvokeOpts,
   PayloadContext,
   RenderContext,
-} from "../types";
-
-/**
- * Exporting configSchema will let you configure form fields that your app
- * users will fill out when they install your app.
- */
-export const configSchema = {
-  $schema: "http://json-schema.org/draft-07/schema#",
-  type: "object",
-  properties: {
-    apiKey: {
-      type: "string",
-      description: "Your API key",
-    },
-  },
-  required: ["apiKey"],
-} as const;
-
-type Config = FromSchema<typeof configSchema>;
+} from "../types/app";
+import type { ConfigSchema } from "../types/config_schema";
 
 /**
  * This handles incoming payload rewrites, e.g. if your order system and data
@@ -30,7 +12,7 @@ type Config = FromSchema<typeof configSchema>;
  */
 export async function handlePayload(
   context: PayloadContext,
-  opts: InvokeOpts<Config>
+  opts: InvokeOpts<ConfigSchema>
 ) {
   return context.payload;
 }
@@ -42,7 +24,7 @@ export async function handlePayload(
  */
 export async function handleEvent(
   context: EventContext,
-  opts: InvokeOpts<Config>
+  opts: InvokeOpts<ConfigSchema>
 ) {
   return await fetch("https://event-bus.example.com/event", {
     method: "POST",
@@ -57,7 +39,7 @@ export async function handleEvent(
  */
 export async function renderContent(
   context: RenderContext,
-  opts: InvokeOpts<Config>
+  opts: InvokeOpts<ConfigSchema>
 ) {
   return "<h1>Hello World</h1>";
 }
